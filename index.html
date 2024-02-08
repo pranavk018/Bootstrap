@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/mystyle.css">
+    <style>
+      /* .box {
+        border:solid 2px blue;
+        height: 100px; 
+      } */
+    </style>
+  </head>
+  <body>  
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><strong>E-kart</strong></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <!-- this button will be visible in mobile view(small screen) to toggle menu -->
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                          </li>
+                          <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>    <!-- end of header/navbar -->
+        </div>
+        <!-- end of row 1     -->
+        <div class="row">
+            <div class="col-md-3 mt-2 bg-light">
+                <!-- sidebar  -->
+                <h6>Filter By Category</h6>
+                <p><a href="#" class="anchor">All</a></p>
+                <p><a href="#" class="anchor">Mobile</a></p>
+                <p><a href="#" class="anchor">Clothing</a></p>
+                <p><a href="#" class="anchor">Footwear</a></p>
+                <hr>
+                <h6>Filter By Price</h6>
+                <form action="" method="get">
+                  <div class="mb-1">
+                      <label class="form-label">Min:</label>
+                      <input type="number" class="form-control"  placeholder="min value">
+                  </div>
+                  <div class="mb-1">
+                      <label  class="form-label">Max:</label>
+                      <input type="number" class="form-control" placeholder="max value">
+                  </div>
+                  <button type="submit" class="btn btn-danger">Search</button>
+              </form>
+                <hr>
+                <h6>Sort By Price</h6>
+                <a href="#" class="anchor">Low to High</a><br>
+                <a href="#" class="anchor">High to Low</a>
+                <hr>
+            </div>
+            <div class="col-md-9 mt-2  p-3">
+                <!-- main content -->
+                <div class="row">
+                  <!-- prod 1 start -->
+                  <div class="col-md-3">                    
+                      <div class="card" style="width:100%;">
+                        <img src="static/images/fruits.jpg" width="20px" class="card-img-top"  alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Product 1</h5>
+                          <p class="card-text">Product 1 Details</p>
+                          <a href="#" class="btn btn-danger">Details</a>
+                        </div>
+                      </div>                   
+                  </div> <!-- end of prod 1 -->  
+                  <div class="col-md-3">                    
+                    <div class="card" style="width: 100%;">
+                      <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Product 1 Details</p>
+                        <a href="#" class="btn btn-danger">Details</a>
+                      </div>
+                    </div>                   
+                </div> <!-- end of prod 1 -->  
+                <div class="col-md-3">                    
+                  <div class="card" style="width: 100%;">
+                    <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text">Product 1 Details</p>
+                      <a href="#" class="btn btn-danger">Details</a>
+                    </div>
+                  </div>                   
+              </div> <!-- end of prod 1 -->    
+              <div class="col-md-3">                    
+                <div class="card" style="width: 100%;">
+                  <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <p class="card-text">Product 1 Details</p>
+                    <a href="#" class="btn btn-danger">Details</a>
+                  </div>
+                </div>                   
+            </div> <!-- end of prod 1 -->     
+            <div class="col-md-3">                    
+              <div class="card" style="width: 100%;">
+                <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Product 1</h5>
+                  <p class="card-text">Product 1 Details</p>
+                  <a href="#" class="btn btn-danger">Details</a>
+                </div>
+              </div>                   
+          </div> <!-- end of prod 1 --> 
+          <div class="col-md-3">                    
+            <div class="card" style="width: 100%;">
+              <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product 1</h5>
+                <p class="card-text">Product 1 Details</p>
+                <a href="#" class="btn btn-danger">Details</a>
+              </div>
+            </div>                   
+        </div> <!-- end of prod 1 --> 
+        <div class="col-md-3">                    
+          <div class="card" style="width: 100%;">
+            <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">Product 1 Details</p>
+              <a href="#" class="btn btn-danger">Details</a>
+            </div>
+          </div>                   
+      </div> <!-- end of prod 1 --> 
+      <div class="col-md-3">                    
+        <div class="card" style="width: 100%;">
+          <img src="static/images/fruits.jpg" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Product 1 Details</p>
+            <a href="#" class="btn btn-danger">Details</a>
+          </div>
+        </div>                   
+    </div> <!-- end of prod 1 -->     
+            </div>          
+        </div> 
+        </div>   
+        <!-- end of 2nd row -->
+        <div class="row">
+            <!-- footer -->
+            <div class="col-md-4 box">  
+                2nd floor, Landmark Building,                 
+                Near St. Xaviers College,
+                Mumbai, 400102
+                Conatct: 8877665544
+            </div>
+            <div class="col-md-4 box">  
+              <a class="anchor"  href="index.html">Home</a>
+              <a class="anchor"  href="login.html">Login</a>
+              <a class="anchor"  href="register.html">Register</a>         
+            </div>
+            <div class="col-md-4 box">                   
+                social media icons
+            </div>
+        </div>        
+    </div>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/popper.js"></script>
+  </body>
+</html>
